@@ -27,7 +27,7 @@
 <body>
 
     <!-- INICIO NAVBAR -->
-    <nav class="navbar navbar-expand-lg bg-body-tertiary">
+    <nav class="navbar navbar-expand-lg bg-body-tertiary fixed-top">
         <div class="container-fluid">
           <a class="navbar-brand" href="#">Navbar</a>
           <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
@@ -47,7 +47,7 @@
       </nav>
     <!-- FIN NAVBAR -->
 
-    <main class="container">
+    <main class="container mt-5 py-5">
         <header>
             <h1 class="text-center">Conversión de Divisas</h1>
             <p class="text-center">Dólar - Euro - UF - UTM</p>
@@ -56,7 +56,11 @@
         <section id="conversorDivisas">
             <div class="row justify-content-center">
                 <form class="col-12 col-md-6 col-xl-4">
-                    <label for="selectorIndicador" class="form-label">Indicador:</label>
+                    <label for="selectorIndicador" class="form-label"
+                    data-bs-toggle="tooltip" 
+                    data-bs-placement="right" 
+                    data-bs-title="Seleccione el indicador que desea convertir."
+                    >Indicador:</label>
                     <select name="selectorIndicador" id="selectorIndicador" class="form-control my-2" required>
                         <option value="dolar">Dólar</option>
                         <option value="euro">Euro</option>
