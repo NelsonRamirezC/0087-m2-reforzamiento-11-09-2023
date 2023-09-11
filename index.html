@@ -46,6 +46,40 @@
         </div>
       </nav>
     <!-- FIN NAVBAR -->
+
+    <main class="container">
+        <header>
+            <h1 class="text-center">Conversión de Divisas</h1>
+            <p class="text-center">Dólar - Euro - UF - UTM</p>
+        </header>
+
+        <section id="conversorDivisas">
+            <div class="row justify-content-center">
+                <form class="col-12 col-md-6 col-xl-4">
+                    <label for="selectorIndicador" class="form-label">Indicador:</label>
+                    <select name="selectorIndicador" id="selectorIndicador" class="form-control my-2" required>
+                        <option value="dolar">Dólar</option>
+                        <option value="euro">Euro</option>
+                        <option value="uf">U.F.</option>
+                        <option value="utm">U.T.M.</option>
+                    </select>
+                    <div>
+                        <label for="cantidad">Cantidad: </label>
+                        <input type="text" class="form-control my-2" id="cantidad" name="cantidad" required>
+                    </div>
+                    <div class="d-flex justify-content-center">
+                        <input type="submit" value="Realizar conversión" class="btn btn-primary">
+                    </div>
+                    
+                </form>
+            </div>
+            <div class="py-5">
+                <hr>
+                <h3 class="text-center">Cantidad en pesos.</h3>
+                <p class="text-center"><strong>Cantidad:</strong> <span id="resultadoConversion"></span></p>
+            </div>
+        </section>
+    </main>
     
 </body>
 </html>
