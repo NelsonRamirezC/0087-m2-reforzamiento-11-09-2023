@@ -28,9 +28,13 @@ $(()=> {
 
             let resultado = cantidad * indicadores[selectorIndicador].valor;
 
+            //MOSTRAR RESULTADO EN FORMATO MONEDA CLP
+            
+            resultado = resultado.toLocaleString("es-CL", {style:"currency", currency:"CLP"});
+
             //ASIGNAMOS EL RESULTADO DE LA CONVERSIÓN AL SPAN DEL DOM
             let resultadoConversion = $("#resultadoConversion");
-            resultadoConversion.text(resultado.toFixed(2));
+            resultadoConversion.text(resultado);
         })
 
 
